@@ -14,6 +14,7 @@ const App = () => {
 
       <input type="text" onChange={(e) => setInput(e.target.value)} value={input} />
       <button onClick={() => setList([...list, input])}>입력</button>
+      {console.log(list)}
     </div>
   )
 }

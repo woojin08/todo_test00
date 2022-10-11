@@ -14,17 +14,17 @@ const Modify = ({ boardList, setBoardList }) => {
     }
 
     const [input, setInput] = useState({
+        id: v.id,
         name: v.name,
         title: v.title,
         content: v.content,
+        date: new Date().toLocaleDateString(),
     })
 
     const inputHandler = (e) => {
         setInput({
             ...input,
             [e.target.name]: e.target.value,
-            date: new Date().toLocaleDateString(),
-            id: id
         })
     }
     return (
